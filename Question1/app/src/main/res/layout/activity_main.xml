@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F0F0F0">
+
+    <ImageView
+        android:id="@+id/boxImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="316dp"
+        android:contentDescription="Box image"
+        android:src="@drawable/box_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:elevation="4dp" />
+
+    <ImageView
+        android:id="@+id/leftImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="312dp"
+        android:contentDescription="Left arrow"
+        android:src="@drawable/arrow_backward"
+        app:layout_constraintBottom_toTopOf="@+id/downImageView"
+        app:layout_constraintEnd_toStartOf="@+id/boxImageView"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#FFCCCB" />
+
+    <ImageView
+        android:id="@+id/upImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Up arrow"
+        android:src="@drawable/arrow_upward"
+        app:layout_constraintBottom_toTopOf="@+id/boxImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054"
+        android:background="#ADD8E6" />
+
+    <ImageView
+        android:id="@+id/downImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Down arrow"
+        android:src="@drawable/arrow_downward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boxImageView"
+        app:layout_constraintVertical_bias="0.945"
+        android:background="#90EE90" />
+
+    <ImageView
+        android:id="@+id/rightImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="312dp"
+        android:contentDescription="Right arrow"
+        android:src="@drawable/arrow_right"
+        app:layout_constraintBottom_toTopOf="@+id/downImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        android:background="#FFD700" />
+</androidx.constraintlayout.widget.ConstraintLayout>
